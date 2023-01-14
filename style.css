@@ -1,0 +1,51 @@
+.transition-effect{
+    height: 150px;
+    width: 150px;
+    background-color: blue;
+    transition: width 4s;
+    transition-timing-function: ease;
+}
+
+.transition-effect:hover{
+    width: 100%;
+
+
+}
+
+.animation{
+    position: relative;
+    height: 150px;
+    width: 150px;
+    background-color: brown;
+    animation-name: color;
+    animation-duration: 8s;
+    animation-delay: 2s;
+    animation-fill-mode: both;
+    
+}
+
+@keyframes color{
+    0%{
+        top: 0px;
+        left: 0;
+        background-color: brown;
+    }
+    25%{top: 0px;
+        left: 200px;
+        right: 0px;
+        background-color: goldenrod;}
+
+    50%{left: 200px;
+        top: 200px;
+        bottom: 0;
+        background-color: blue;}
+    75%{left: 0;
+        right: 200px;
+        top: 200px;
+
+        background-color: aqua;}
+
+    100%{top: 0;
+        left: 0;
+        background-color: black;}
+}
